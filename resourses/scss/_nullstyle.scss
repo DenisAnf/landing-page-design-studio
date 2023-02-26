@@ -15,4 +15,6 @@ a:hover{text-decoration: none;}
 * li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+@media (prefers-reduced-motion: no-preference) { :root { scroll-behavior: smooth; } }
 /*--------------------*/

@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Manrope:200,regular,700);
 
 // Задаем шрифт по умолчанию через переменную для nullstyle
-$fontfamily: "Manrope";
+$fontfamily: "Manrope", sans-serif;
 
 // Подключение файла обнуляющих стилей
 @import "_nullstyle";
@@ -20,13 +20,19 @@ $fontfamily: "Manrope";
 // ОБЩИЕ ПАРАМЕТРЫ===================================
 
 // Оболочка
+body {
+	background-color: #f5f5f5;
+	width: 100%;
+}
+
 .wraper{
 	//overflow: hidden; с ним не работает sticky
+	margin: 0 auto;
 	min-height: 100%;
 	max-width: 1404px;
 	padding: 0px 2px;
-	margin: 0 auto;
 	color: #121212;
+	background-color: #f2f2f2f2;
 }
 
 // Основная сетка - контейнер
@@ -47,8 +53,8 @@ img {
 	position: sticky;
 	top: 0;
 	min-height: 25px;
-	margin: 31px 0 68px;
-	padding: 2px 0;
+	margin: 0 0 60px;
+	padding: 33px 0 10px;
 	background-color: white;
 	z-index: 2;
 
