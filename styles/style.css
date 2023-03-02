@@ -109,10 +109,10 @@ img {
 
 .header {
   position: fixed;
-  width: 100%;
-  left: 0;
+  max-width: 1404px;
+  left: 50%;
   top: 0;
-  padding: 26px 0 26px;
+  padding: 26px 2px 26px;
   background-color: white;
   z-index: 2;
 }
