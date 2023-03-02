@@ -112,7 +112,7 @@ img {
   width: 100%;
   left: 0;
   top: 0;
-  padding: 26px 2px 26px;
+  padding: 26px 0 26px;
   background-color: white;
   z-index: 2;
 }
