@@ -32,7 +32,7 @@ body {
 	max-width: 1404px;
 	padding: 0px 2px;
 	color: #121212;
-	background-color: white;
+	background-color: #FFFFFF;
 }
 
 // Основная сетка - контейнер
@@ -52,11 +52,35 @@ img {
 .header {
 	position: fixed;
 	width: 100%;
-	left: 0;
+	max-width: 1150px;
+	left: 50%;
 	top: 0;
+	transform: translateX(-50%);
 	padding: 26px 0 26px;
-	background-color: white;
+	background-color: #FFFFFF;
 	z-index: 2;
+
+	@media (min-width: 1150px) {
+		&:after,
+		&:before {
+			content: '';
+			position: fixed;
+			top: 0;
+			height: 100%;
+			width: 125px;
+			background-color: #FFFFFF;
+		}
+		&:after {
+			right: 0;
+			transform: translateX(100%);
+		}
+		&:before {
+			content: '';
+			left: 0;
+			transform: translateX(-100%);
+		}
+	}
+	
 
 	@media (max-width: 1000px) {
 		padding: calcSize(10, 26, 320, 1000) 0 calcSize(10, 26, 320, 1000);
@@ -88,7 +112,7 @@ img {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 10px 60px;
-		padding-left: 80px;
+		padding-left: 70px;
 
 		@media (max-width: 400px) {
 			padding-right: 15px;
@@ -101,17 +125,33 @@ img {
 		letter-spacing: -0.03em;
 		text-transform: uppercase;
 		vertical-align: baseline;
-		transition: all 100ms linear;
+		transition: all 300ms ease;
 		
 		&:last-child{
 			padding-right: 0px;
 		}
 		
-		&:hover {
+		&:after {
+			content: "";
+			background-color: #121212;
+			display: block;
 			opacity: 0.5;
-			border-bottom: 1px solid #1212128e;
-			transition: all 200ms linear;
-			//margin-bottom: -1px; при fixed не нужно
+			width: 0%;
+			height: 1px;
+			width: 0%;
+			transform: translateY(6px);
+			transition: width 300ms ease-in-out;
+			
+		}
+
+		&:hover {
+			//margin-bottom: -1px; *заменил на after
+			//border-bottom: 1px solid #1212128e;
+			//transition: all 200ms linear;
+			opacity: 0.5;
+			&:after {
+				width: 100%;
+			}
 		}
 		
 	}
