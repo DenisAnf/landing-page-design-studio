@@ -301,18 +301,21 @@ img {
   margin-bottom: 30px;
 }
 .projects__all {
+  display: block;
+  margin-bottom: 150px;
   width: 100%;
+  padding: 56px 0;
+  border: 1px solid #AD1818;
+  border-radius: 5px;
   font-size: 30px;
   line-height: 41px;
   text-align: center;
   letter-spacing: -0.03em;
   color: #AD1818;
-  background-color: inherit;
-  border: 1px solid #AD1818;
-  border-radius: 5px;
-  padding: 56px 0;
-  margin-bottom: 150px;
   transition: all 200ms linear;
+}
+.projects__all:visited {
+  color: #AD1818;
 }
 .projects__all:hover {
   background-color: #AD1818;
@@ -335,7 +338,6 @@ img {
   font-size: 30px;
   line-height: 41px;
   letter-spacing: -0.03em;
-  text-transform: uppercase;
   margin-bottom: 15px;
 }
 @media (max-width: 1000px) {
