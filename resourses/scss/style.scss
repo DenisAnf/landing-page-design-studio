@@ -52,45 +52,52 @@ img {
 .header {
 	position: fixed;
 	width: 100%;
-	max-width: 1150px;
+	max-width: 1400px;
 	left: 50%;
 	top: 0;
 	transform: translateX(-50%);
-	padding: 26px 0 26px;
+	padding: 26px 125px 26px;
 	background-color: #FFFFFF;
 	z-index: 2;
 
-	@media (min-width: 1150px) {
-		&:after,
-		&:before {
-			content: '';
-			position: fixed;
-			top: 0;
-			height: 100%;
-			width: 125px;
-			background-color: #FFFFFF;
-		}
-		&:after {
-			right: 0;
-			transform: translateX(100%);
-		}
-		&:before {
-			content: '';
-			left: 0;
-			transform: translateX(-100%);
-		}
-	}
-	
 	@media (max-width: 1000px) {
 		padding-top: calcSize(10, 26, 320, 1000);
 		padding-bottom: calcSize(10, 26, 320, 1000);
 	}
 
-	@media (max-width: 1180px) {
-		padding-left: 15px;
-		padding-right: 15px;
+	@media (max-width: 1404px) {
+		padding-left: calcSize(17, 125, 1180, 1404);
+		padding-right: calcSize(17, 125, 1180, 1404);
 	}
 	
+	@media (max-width: 1180px) {
+	padding-left: 17px;
+	padding-right: 17px;
+	}
+	
+	//@media (min-width: 1150px) { *зманил на padding + calc
+		//
+		//&:after,
+		//&:before {
+		//	content: '';
+		//	position: fixed;
+		//	top: 0;
+		//	height: 100%;
+		//	width: 125px;
+		//	background-color: #FFFFFF;
+		//}
+
+		//&:after {
+		//	right: 0;
+		//	transform: translateX(100%);
+		//}
+
+		//&:before {
+		//	content: '';
+		//	left: 0;
+		//	transform: translateX(-100%);
+		//}
+	//}
 
 	&__inner {
 		display: flex;
