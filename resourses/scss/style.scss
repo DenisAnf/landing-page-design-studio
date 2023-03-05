@@ -81,9 +81,14 @@ img {
 		}
 	}
 	
-
 	@media (max-width: 1000px) {
-		padding: calcSize(10, 26, 320, 1000) 0 calcSize(10, 26, 320, 1000);
+		padding-top: calcSize(10, 26, 320, 1000);
+		padding-bottom: calcSize(10, 26, 320, 1000);
+	}
+
+	@media (max-width: 1180px) {
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 	
 
@@ -194,12 +199,7 @@ img {
 	}
 
 	&__image {
-		margin-bottom: 120px;
 		position: relative;
-
-		@media (max-width: 1000px) {
-			margin-bottom: calcSize(40, 120, 320, 1000);
-		}
 	}
 
 	&__info {
@@ -221,16 +221,22 @@ img {
 	}
 }
 
+.title {
+	margin-bottom: 30px;
+	padding-top: 150px;
+	font-size: 18px;
+	line-height: 25px;
+	letter-spacing: -0.03em;
+	text-transform: uppercase;
+
+	@media (max-width: 1000px) {
+		padding-top: calcSize(70, 150, 320, 1000);
+	}
+}
+
 .about {
 
-	&__title {
-		margin-bottom: 30px;
-		padding-top: 30px;
-		font-size: 18px;
-		line-height: 25px;
-		letter-spacing: -0.03em;
-		text-transform: uppercase;
-	}
+	&__title {}
 
 	&__info {
 		font-size: 45px;
@@ -256,27 +262,16 @@ img {
 		padding: 20px 0;
 		background-color: #AD1818;
 		border-radius: 5px;
-		margin-bottom: 150px;
-
+		
 		&:visited {
 			color: #FFFFFF;
-		}
-
-		@media (max-width: 1000px) {
-			margin-bottom: calcSize(50, 150, 320, 1000);
 		}
 	}
 }
 
 .projects {
 
-	&__title {
-		font-size: 18px;
-		line-height: 25px;
-		letter-spacing: -0.03em;
-		text-transform: uppercase;
-		margin-bottom: 30px;
-	}
+	&__title {}
 
 	&__row {}
 
@@ -354,13 +349,9 @@ img {
 	&__title {
 		margin-bottom: 34px;
 		padding-top: 151px;
-		font-size: 18px;
-		line-height: 25px;
-		letter-spacing: -0.03em;
-		text-transform: uppercase;
-
+		
 		@media (max-width: 1000px) {
-			padding-top: calcSize(50, 151, 320, 1000);
+			padding-top: calcSize(70, 151, 320, 1000);
 		}
 	}
 
@@ -436,7 +427,8 @@ img {
 .contacts {
 
 	&__logo {
-		margin-bottom: 10px;
+		margin-bottom: 12px;
+		
 	}
 
 	&__title {
@@ -460,7 +452,7 @@ img {
 	}
 
 	&__mail {
-		margin-bottom: 160px;
+		margin-bottom: 150px;
 		font-size: 60px;
 		line-height: 60px;
 		letter-spacing: -0.03em;

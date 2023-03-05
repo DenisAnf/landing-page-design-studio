@@ -139,7 +139,14 @@ img {
 }
 @media (max-width: 1000px) {
   .header {
-    padding: calc(0.0235294118 * 100vw + 2.4705882353px) 0 calc(0.0235294118 * 100vw + 2.4705882353px);
+    padding-top: calc(0.0235294118 * 100vw + 2.4705882353px);
+    padding-bottom: calc(0.0235294118 * 100vw + 2.4705882353px);
+  }
+}
+@media (max-width: 1180px) {
+  .header {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .header__inner {
@@ -223,13 +230,7 @@ img {
   }
 }
 .start__image {
-  margin-bottom: 120px;
   position: relative;
-}
-@media (max-width: 1000px) {
-  .start__image {
-    margin-bottom: calc(0.1176470588 * 100vw + 2.3529411765px);
-  }
 }
 .start__info {
   width: min(430px, 80%);
@@ -250,14 +251,20 @@ img {
   }
 }
 
-.about__title {
+.title {
   margin-bottom: 30px;
-  padding-top: 30px;
+  padding-top: 150px;
   font-size: 18px;
   line-height: 25px;
   letter-spacing: -0.03em;
   text-transform: uppercase;
 }
+@media (max-width: 1000px) {
+  .title {
+    padding-top: calc(0.1176470588 * 100vw + 32.3529411765px);
+  }
+}
+
 .about__info {
   font-size: 45px;
   line-height: 61px;
@@ -282,24 +289,11 @@ img {
   padding: 20px 0;
   background-color: #AD1818;
   border-radius: 5px;
-  margin-bottom: 150px;
 }
 .about__link:visited {
   color: #FFFFFF;
 }
-@media (max-width: 1000px) {
-  .about__link {
-    margin-bottom: calc(0.1470588235 * 100vw + 2.9411764706px);
-  }
-}
 
-.projects__title {
-  font-size: 18px;
-  line-height: 25px;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
 .projects__all {
   display: block;
   margin-bottom: 150px;
@@ -368,14 +362,10 @@ img {
 .services__title {
   margin-bottom: 34px;
   padding-top: 151px;
-  font-size: 18px;
-  line-height: 25px;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
 }
 @media (max-width: 1000px) {
   .services__title {
-    padding-top: calc(0.1485294118 * 100vw + 2.4705882353px);
+    padding-top: calc(0.1191176471 * 100vw + 31.8823529412px);
   }
 }
 .service__image {
@@ -442,7 +432,7 @@ img {
 }
 
 .contacts__logo {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 .contacts__title {
   margin-bottom: 32px;
@@ -464,7 +454,7 @@ img {
   }
 }
 .contacts__mail {
-  margin-bottom: 160px;
+  margin-bottom: 150px;
   font-size: 60px;
   line-height: 60px;
   letter-spacing: -0.03em;
