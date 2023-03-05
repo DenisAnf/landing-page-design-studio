@@ -309,6 +309,11 @@ img {
 }
 
 .project {
+	margin-bottom: 90px;
+
+	@media (max-width: 1000px) {
+		margin-bottom: calcSize(30, 90, 320, 1000);
+	}
 
 	&__image {
 		margin-bottom: 15px;
@@ -327,14 +332,13 @@ img {
 	}
 
 	&__link {
-		margin-bottom: 90px;
+		
 		font-size: 20px;
 		line-height: 27px;
 		letter-spacing: -0.03em;
 		color: #AD1818;
 		
 		@media (max-width: 1000px) {
-			margin-bottom: calcSize(30, 90, 320, 1000);
 			font-size: calcSize(16, 20, 320, 1000);
 			line-height: 1.1em;
 		}
@@ -358,25 +362,28 @@ img {
 }
 
 .service {
-	
+	margin-bottom: 60px;
+
+	@media (max-width: 1000px) {
+		margin-bottom: calcSize(20, 60, 320, 1000);
+	}
+
 	&__image {
 		margin-bottom: 15px;
 	}
 
 	&__info {
-		margin-bottom: 60px;
 		font-size: 30px;
 		line-height: 41px;
 		letter-spacing: -0.03em;
 				
 		@media (max-width: 1000px) {
-			margin-bottom: calcSize(20, 60, 320, 1000);
 			font-size: calcSize(17, 30, 320, 1000);
 			line-height: 1.2em;
 		}		
 	}
 
-	&__info-last {
+	&:last-child {
 		margin-bottom: 0px;
 		padding-bottom: 150px;
 
