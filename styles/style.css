@@ -159,6 +159,10 @@ img {
     min-width: 127px;
   }
 }
+#title {
+  color: #AD1818;
+}
+
 .menu__list {
   display: flex;
   flex-wrap: wrap;
