@@ -83,8 +83,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*--------------------*/
 body {
-  background-color: #f5f5f5;
   width: 100%;
+  background-color: #f5f5f5;
 }
 
 .wraper {
@@ -159,10 +159,6 @@ img {
     min-width: 127px;
   }
 }
-#title {
-  color: #AD1818;
-}
-
 .menu__list {
   display: flex;
   flex-wrap: wrap;
@@ -206,10 +202,10 @@ img {
 .start__title {
   margin-bottom: 30px;
   padding-top: 128px;
+  max-width: 956px;
   font-size: 60px;
   line-height: 60px;
   letter-spacing: -0.03em;
-  max-width: 956px;
 }
 @media (max-width: 1000px) {
   .start__title {
@@ -248,10 +244,10 @@ img {
 }
 @media (max-width: 1000px) {
   .start__info {
-    font-size: calc(0.0058823529 * 100vw + 14.1176470588px);
-    line-height: 1em;
     bottom: calc(0.0441176471 * 100vw + -4.1176470588px);
     left: calc(0.0441176471 * 100vw + -4.1176470588px);
+    font-size: calc(0.0058823529 * 100vw + 14.1176470588px);
+    line-height: 1em;
   }
 }
 
@@ -270,11 +266,11 @@ img {
 }
 
 .about__info {
+  max-width: 1048px;
+  margin-bottom: 30px;
   font-size: 45px;
   line-height: 61px;
   letter-spacing: -0.03em;
-  max-width: 1048px;
-  margin-bottom: 30px;
 }
 @media (max-width: 1000px) {
   .about__info {
@@ -285,14 +281,14 @@ img {
 .about__link {
   display: block;
   width: 255px;
+  padding: 20px 0;
+  background-color: #AD1818;
+  border-radius: 5px;
   text-align: center;
   font-size: 20px;
   line-height: 27px;
   letter-spacing: -0.03em;
   color: #FFFFFF;
-  padding: 20px 0;
-  background-color: #AD1818;
-  border-radius: 5px;
 }
 .about__link:visited {
   color: #FFFFFF;
@@ -322,10 +318,10 @@ img {
 }
 @media (max-width: 1000px) {
   .projects__all {
-    font-size: calc(0.0176470588 * 100vw + 12.3529411765px);
-    line-height: 1.2em;
     margin-bottom: calc(0.1470588235 * 100vw + 2.9411764706px);
     padding: calc(0.0441176471 * 100vw + 13.8823529412px) 0;
+    font-size: calc(0.0176470588 * 100vw + 12.3529411765px);
+    line-height: 1.2em;
   }
 }
 
@@ -333,10 +329,10 @@ img {
   margin-bottom: 15px;
 }
 .project__info {
+  margin-bottom: 15px;
   font-size: 30px;
   line-height: 41px;
   letter-spacing: -0.03em;
-  margin-bottom: 15px;
 }
 @media (max-width: 1000px) {
   .project__info {
@@ -345,17 +341,17 @@ img {
   }
 }
 .project__link {
+  margin-bottom: 90px;
   font-size: 20px;
   line-height: 27px;
   letter-spacing: -0.03em;
   color: #AD1818;
-  margin-bottom: 90px;
 }
 @media (max-width: 1000px) {
   .project__link {
+    margin-bottom: calc(0.0882352941 * 100vw + 1.7647058824px);
     font-size: calc(0.0058823529 * 100vw + 14.1176470588px);
     line-height: 1.1em;
-    margin-bottom: calc(0.0882352941 * 100vw + 1.7647058824px);
   }
 }
 
@@ -376,16 +372,16 @@ img {
   margin-bottom: 15px;
 }
 .service__info {
+  margin-bottom: 60px;
   font-size: 30px;
   line-height: 41px;
   letter-spacing: -0.03em;
-  margin-bottom: 60px;
 }
 @media (max-width: 1000px) {
   .service__info {
+    margin-bottom: calc(0.0588235294 * 100vw + 1.1764705882px);
     font-size: calc(0.0191176471 * 100vw + 10.8823529412px);
     line-height: 1.2em;
-    margin-bottom: calc(0.0588235294 * 100vw + 1.1764705882px);
   }
 }
 .service__info-last {
@@ -429,9 +425,9 @@ img {
 }
 @media (max-width: 1000px) {
   .example__info {
+    bottom: calc(0.0735294118 * 100vw + -13.5294117647px);
     font-size: calc(0.0176470588 * 100vw + 12.3529411765px);
     line-height: 1.2em;
-    bottom: calc(0.0735294118 * 100vw + -13.5294117647px);
   }
 }
 
@@ -459,11 +455,11 @@ img {
 }
 .contacts__mail {
   margin-bottom: 150px;
+  padding-bottom: 10px;
   font-size: 60px;
   line-height: 60px;
   letter-spacing: -0.03em;
   opacity: 0.5;
-  padding-bottom: 10px;
 }
 .contacts__mail a {
   border-bottom: 2px solid #121212;
@@ -471,9 +467,9 @@ img {
 }
 @media (max-width: 1000px) {
   .contacts__mail {
+    margin-bottom: calc(0.1617647059 * 100vw + -1.7647058824px);
     font-size: calc(0.0411764706 * 100vw + 18.8235294118px);
     line-height: 1em;
-    margin-bottom: calc(0.1617647059 * 100vw + -1.7647058824px);
   }
 }
 
@@ -481,13 +477,13 @@ img {
   background-color: #121212;
 }
 .footer__cr {
+  padding-bottom: 30px;
   text-align: center;
   font-size: 20px;
   line-height: 27px;
   letter-spacing: -0.03em;
   color: #FFFFFF;
   opacity: 0.5;
-  padding-bottom: 30px;
   font-weight: 200;
 }
 @media (max-width: 1000px) {
