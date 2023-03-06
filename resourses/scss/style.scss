@@ -56,13 +56,13 @@ img {
 	left: 50%;
 	top: 0;
 	transform: translateX(-50%);
-	padding: 26px 125px 26px;
+	padding: 33px 125px 33px;
 	background-color: #FFFFFF;
 	z-index: 2;
 
 	@media (max-width: 1000px) {
-		padding-top: calcSize(10, 26, 320, 1000);
-		padding-bottom: calcSize(10, 26, 320, 1000);
+		padding-top: calcSize(10, 33, 320, 1000);
+		padding-bottom: calcSize(10, 33, 320, 1000);
 	}
 
 	@media (max-width: 1404px) {

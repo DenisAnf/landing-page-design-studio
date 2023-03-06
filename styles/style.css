@@ -114,14 +114,14 @@ img {
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  padding: 26px 125px 26px;
+  padding: 33px 125px 33px;
   background-color: #FFFFFF;
   z-index: 2;
 }
 @media (max-width: 1000px) {
   .header {
-    padding-top: calc(0.0235294118 * 100vw + 2.4705882353px);
-    padding-bottom: calc(0.0235294118 * 100vw + 2.4705882353px);
+    padding-top: calc(0.0338235294 * 100vw + -0.8235294118px);
+    padding-bottom: calc(0.0338235294 * 100vw + -0.8235294118px);
   }
 }
 @media (max-width: 1404px) {
