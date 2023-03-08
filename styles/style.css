@@ -91,8 +91,6 @@ body {
   overflow: hidden;
   margin: 0 auto;
   min-height: 100%;
-  max-width: 1404px;
-  padding: 0px 2px;
   color: #121212;
   background-color: #FFFFFF;
 }
@@ -106,6 +104,17 @@ body {
 img {
   height: auto;
   max-width: 100%;
+}
+
+a,
+li,
+h1,
+h2,
+h3,
+img,
+div,
+span {
+  letter-spacing: -0.03em;
 }
 
 .header {
@@ -125,10 +134,10 @@ img {
     padding-bottom: calc(0.0338235294 * 100vw + -0.8235294118px);
   }
 }
-@media (max-width: 1404px) {
+@media (max-width: 1400px) {
   .header {
-    padding-left: calc(0.4821428571 * 100vw + -551.9285714286px);
-    padding-right: calc(0.4821428571 * 100vw + -551.9285714286px);
+    padding-left: calc(0.4909090909 * 100vw + -562.2727272727px);
+    padding-right: calc(0.4909090909 * 100vw + -562.2727272727px);
   }
 }
 @media (max-width: 1180px) {
@@ -148,10 +157,6 @@ img {
 .header__logo img {
   min-width: 128px;
 }
-a, li, h1, h2, h3, img, div, span {
-  letter-spacing: -0.03em;
-}
-
 .menu__list {
   display: flex;
   flex-wrap: wrap;
@@ -188,6 +193,66 @@ a, li, h1, h2, h3, img, div, span {
 }
 .menu__list-item:hover:after {
   width: 100%;
+}
+
+.footer {
+  background-color: #121212;
+}
+.footer__cr {
+  padding-bottom: 30px;
+  padding-left: 6px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+@media (max-width: 1000px) {
+  .footer__cr {
+    font-size: calc(0.0073529412 * 100vw + 12.6470588235px);
+    line-height: 1.1em;
+  }
+}
+
+.menu-f {
+  padding-right: 11px;
+}
+@media (max-width: 1000px) {
+  .menu-f {
+    padding-right: 0px;
+  }
+}
+.menu-f__list {
+  padding-top: 60px;
+  margin-bottom: 87px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 55.5px;
+}
+@media (max-width: 1000px) {
+  .menu-f__list {
+    gap: 10px calc(0.0580882353 * 100vw + -2.5882352941px);
+    margin-bottom: calc(0.0397058824 * 100vw + 47.2941176471px);
+  }
+}
+.menu-f__list-item {
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: all 200ms linear;
+}
+.menu-f__list-item:hover {
+  opacity: 0.5;
+  transition: all 100ms linear;
+}
+@media (max-width: 1000px) {
+  .menu-f__list-item {
+    font-size: calc(0.0029411765 * 100vw + 15.0588235294px);
+    line-height: 1.2em;
+  }
 }
 
 .start__title {
@@ -400,8 +465,15 @@ a, li, h1, h2, h3, img, div, span {
 
 .example__image {
   position: relative;
-  max-height: 717px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0.52%, rgba(0, 0, 0, 0.4) 82.81%);
+}
+.example__image img {
+  max-height: 717px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .example__info {
   width: min(443px, 80%);
@@ -488,65 +560,5 @@ a, li, h1, h2, h3, img, div, span {
     margin-bottom: calc(0.1617647059 * 100vw + -1.7647058824px);
     font-size: calc(0.0411764706 * 100vw + 18.8235294118px);
     line-height: 1em;
-  }
-}
-
-.footer {
-  background-color: #121212;
-}
-.footer__cr {
-  padding-bottom: 30px;
-  padding-left: 6px;
-  text-align: center;
-  font-size: 20px;
-  line-height: 27px;
-  color: #FFFFFF;
-  opacity: 0.5;
-}
-@media (max-width: 1000px) {
-  .footer__cr {
-    font-size: calc(0.0073529412 * 100vw + 12.6470588235px);
-    line-height: 1.1em;
-  }
-}
-
-.menu-f {
-  padding-right: 11px;
-}
-@media (max-width: 1000px) {
-  .menu-f {
-    padding-right: 0px;
-  }
-}
-.menu-f__list {
-  padding-top: 60px;
-  margin-bottom: 87px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px 55.5px;
-}
-@media (max-width: 1000px) {
-  .menu-f__list {
-    gap: 10px calc(0.0580882353 * 100vw + -2.5882352941px);
-    margin-bottom: calc(0.0397058824 * 100vw + 47.2941176471px);
-  }
-}
-.menu-f__list-item {
-  font-size: 18px;
-  line-height: 25px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  transition: all 200ms linear;
-}
-.menu-f__list-item:hover {
-  opacity: 0.5;
-  transition: all 100ms linear;
-}
-@media (max-width: 1000px) {
-  .menu-f__list-item {
-    font-size: calc(0.0029411765 * 100vw + 15.0588235294px);
-    line-height: 1.2em;
   }
 }
