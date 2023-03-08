@@ -400,6 +400,8 @@ a, li, h1, h2, h3, img, div, span {
 
 .example__image {
   position: relative;
+  height: 717px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0.52%, rgba(0, 0, 0, 0.4) 82.81%);
 }
 .example__info {
   width: min(443px, 80%);
