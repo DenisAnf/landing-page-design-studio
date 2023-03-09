@@ -120,36 +120,24 @@ span {
 .header {
   position: fixed;
   width: 100%;
-  max-width: 1400px;
-  left: 50%;
+  left: center;
   top: 0;
-  transform: translateX(-50%);
-  padding: 33px 125px;
   background-color: #FFFFFF;
   z-index: 2;
-}
-@media (max-width: 1000px) {
-  .header {
-    padding-top: calc(0.0338235294 * 100vw + -0.8235294118px);
-    padding-bottom: calc(0.0338235294 * 100vw + -0.8235294118px);
-  }
-}
-@media (max-width: 1400px) {
-  .header {
-    padding-left: calc(0.4909090909 * 100vw + -562.2727272727px);
-    padding-right: calc(0.4909090909 * 100vw + -562.2727272727px);
-  }
-}
-@media (max-width: 1180px) {
-  .header {
-    padding-left: 17px;
-    padding-right: 17px;
-  }
 }
 .header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 33px 15px;
+}
+@media (max-width: 1000px) {
+  .header__inner {
+    padding-top: calc(0.0338235294 * 100vw + -0.8235294118px);
+    padding-bottom: calc(0.0338235294 * 100vw + -0.8235294118px);
+  }
 }
 .header__logo {
   transform: translate(-1px, -2.8px);
@@ -160,7 +148,7 @@ span {
 .menu__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px 60.7px;
+  gap: 10px 60.6px;
   padding-left: 70px;
 }
 @media (max-width: 400px) {
@@ -176,7 +164,7 @@ span {
   transition: all 300ms ease;
 }
 .menu__list-item:last-child {
-  padding-right: -1px;
+  padding-right: 0.5px;
 }
 .menu__list-item:after {
   content: "";
@@ -522,11 +510,11 @@ span {
   content: "";
   position: absolute;
   display: block;
-  left: 0;
-  bottom: 38px;
-  width: 13px;
-  height: 22px;
-  background: url("../resourses/img/phone.svg") 50%/contain no-repeat;
+  left: -5px;
+  bottom: 37px;
+  width: 24px;
+  height: 24px;
+  background: url("../resourses/img/phone.svg") center center/auto 22px no-repeat;
 }
 .contacts__number {
   margin-bottom: 30px;
